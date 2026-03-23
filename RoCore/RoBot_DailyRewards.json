@@ -1,0 +1,14 @@
+{
+  "id": "template_10",
+  "name": "template_10",
+  "keywords": [
+    "daily",
+    "reward",
+    "streak"
+  ],
+  "scriptName": "RoBot_DailyRewards",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal lastClaim = {}\nlocal DAY = 86400\nPlayers.PlayerAdded:Connect(function(p)\n\tlastClaim[p.UserId] = lastClaim[p.UserId] or 0\nend)\n-- Claim via RemoteEvent; compare os.time() - lastClaim"
+}

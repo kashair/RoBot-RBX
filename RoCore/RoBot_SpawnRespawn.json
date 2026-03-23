@@ -1,0 +1,14 @@
+{
+  "id": "template_8",
+  "name": "template_8",
+  "keywords": [
+    "spawn",
+    "respawn",
+    "character added"
+  ],
+  "scriptName": "RoBot_SpawnRespawn",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nPlayers.PlayerAdded:Connect(function(p)\n\tp.CharacterAdded:Connect(function(char)\n\t\tlocal hum = char:WaitForChild(\"Humanoid\")\n\t\thum.Died:Connect(function()\n\t\t\t-- respawn timing, effects\n\t\tend)\n\tend)\nend)"
+}

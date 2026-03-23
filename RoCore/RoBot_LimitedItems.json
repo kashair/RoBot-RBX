@@ -1,0 +1,14 @@
+{
+  "id": "template_19",
+  "name": "template_19",
+  "keywords": [
+    "limited",
+    "limited time",
+    "event item"
+  ],
+  "scriptName": "RoBot_LimitedItems",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local END_TIME = os.time() + 86400\nlocal function active()\n\treturn os.time() < END_TIME\nend"
+}

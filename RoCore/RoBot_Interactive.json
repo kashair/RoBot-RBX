@@ -1,0 +1,15 @@
+{
+  "id": "template_38",
+  "name": "template_38",
+  "keywords": [
+    "door",
+    "button",
+    "interactive",
+    "lever"
+  ],
+  "scriptName": "RoBot_Interactive",
+  "scriptType": "Script",
+  "parent": "Workspace",
+  "defaults": {},
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal TweenService = game:GetService(\"TweenService\")\n\n--[[\n\tInteractive Objects System\n\t\n\tSETUP:\n\t1. Create doors/buttons in Workspace\n\t2. Tag with attributes:\n\t   - Door: IsDoor=true, OpenPosition=Vector3, Duration=1\n\t   - Button: IsButton=true, Target=doorName\n\t3. Or configure via script below\n--"
+}

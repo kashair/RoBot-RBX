@@ -1,0 +1,17 @@
+{
+  "id": "template_43",
+  "name": "template_43",
+  "keywords": [
+    "spawn enemy",
+    "enemy spawn",
+    "mobs"
+  ],
+  "scriptName": "RoBot_EnemySpawn",
+  "scriptType": "Script",
+  "parent": "Workspace",
+  "defaults": {
+    "MAX_ENEMIES": "20",
+    "SPAWN_RATE": "5"
+  },
+  "code": "local ServerStorage = game:GetService(\"ServerStorage\")\nlocal Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tEnemy Spawning System\n\t\n\tSETUP:\n\t1. Create enemy templates in ServerStorage.Enemies\n\t2. Create spawn locations in Workspace.SpawnPoints\n\t3. Configure spawn settings below\n--"
+}

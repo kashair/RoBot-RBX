@@ -1,0 +1,15 @@
+{
+  "id": "template_20",
+  "name": "template_20",
+  "keywords": [
+    "combat",
+    "melee",
+    "ranged",
+    "attack"
+  ],
+  "scriptName": "RoBot_Combat",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "-- Validate hits server-side; use raycasts or hitboxes\nlocal DAMAGE = 10\nlocal function applyDamage(targetHumanoid, amount)\n\ttargetHumanoid:TakeDamage(amount)\nend"
+}

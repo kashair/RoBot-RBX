@@ -1,0 +1,14 @@
+{
+  "id": "template_42",
+  "name": "template_42",
+  "keywords": [
+    "quest",
+    "mission",
+    "objective"
+  ],
+  "scriptName": "RoBot_Quest",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local DataStoreService = game:GetService(\"DataStoreService\")\nlocal Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tQuest System\n\t\n\tFeatures:\n\t- Multi-step quests\n\t- Kill, collect, talk objectives\n\t- Rewards on completion\n\t- Quest tracking per player\n--"
+}

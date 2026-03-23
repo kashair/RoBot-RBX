@@ -1,0 +1,14 @@
+{
+  "id": "template_16",
+  "name": "template_16",
+  "keywords": [
+    "trade",
+    "trading",
+    "exchange"
+  ],
+  "scriptName": "RoBot_Trading",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "-- Use secure two-party confirm + server validation\nlocal pending = {}\n-- Offer -> accept -> execute swap atomically"
+}

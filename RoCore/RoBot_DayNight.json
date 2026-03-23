@@ -1,0 +1,15 @@
+{
+  "id": "template_31",
+  "name": "template_31",
+  "keywords": [
+    "day night",
+    "day/night",
+    "cycle",
+    "time of day"
+  ],
+  "scriptName": "RoBot_DayNight",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Lighting = game:GetService(\"Lighting\")\nlocal cycleSeconds = 600\nlocal t0 = tick()\ngame:GetService(\"RunService\").Heartbeat:Connect(function()\n\tlocal phase = ((tick() - t0) % cycleSeconds) / cycleSeconds\n\tLighting.ClockTime = phase * 24\nend)"
+}

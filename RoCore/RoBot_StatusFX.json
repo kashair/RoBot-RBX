@@ -1,0 +1,16 @@
+{
+  "id": "template_27",
+  "name": "template_27",
+  "keywords": [
+    "status",
+    "poison",
+    "stun",
+    "burn",
+    "slow"
+  ],
+  "scriptName": "RoBot_StatusFX",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tStatus Effects System\n\t\n\tFeatures:\n\t- Apply effects like poison, stun, burn, slow\n\t- Timed durations\n\t- Stacking effects\n\t- Visual indicators\n--"
+}

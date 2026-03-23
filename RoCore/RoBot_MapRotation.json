@@ -1,0 +1,16 @@
+{
+  "id": "template_35",
+  "name": "template_35",
+  "keywords": [
+    "map rotation",
+    "rotate map",
+    "maps"
+  ],
+  "scriptName": "RoBot_MapRotation",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "ROTATION_INTERVAL": "300"
+  },
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tMap Rotation System\n\t\n\tSETUP:\n\t1. Create folder in Workspace: Maps\n\t2. Inside, create subfolders for each map: Map1, Map2, Map3\n\t3. Put all map parts/models inside respective folders\n--"
+}

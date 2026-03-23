@@ -1,0 +1,14 @@
+{
+  "id": "template_14",
+  "name": "template_14",
+  "keywords": [
+    "equip",
+    "unequip",
+    "gear"
+  ],
+  "scriptName": "RoBot_Equip",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal equipped = {}\nlocal function unequip(p)\n\tlocal tool = equipped[p.UserId]\n\tif tool and tool.Parent then tool.Parent = p.Backpack end\n\tequipped[p.UserId] = nil\nend\n-- Equip: clone Tool from ServerStorage into character"
+}

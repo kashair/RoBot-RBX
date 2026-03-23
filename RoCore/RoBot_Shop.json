@@ -1,0 +1,15 @@
+{
+  "id": "template_12",
+  "name": "template_12",
+  "keywords": [
+    "shop",
+    "buy",
+    "purchase",
+    "store"
+  ],
+  "scriptName": "RoBot_Shop",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal rem = Instance.new(\"RemoteEvent\")\nrem.Name = \"RoBot_Purchase\"\nrem.Parent = ReplicatedStorage\nrem.OnServerEvent:Connect(function(plr, itemId, price)\n\t-- validate price, deduct currency, grant item\nend)"
+}

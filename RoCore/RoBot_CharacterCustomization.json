@@ -1,0 +1,14 @@
+{
+  "id": "template_7",
+  "name": "template_7",
+  "keywords": [
+    "customization",
+    "customize",
+    "appearance"
+  ],
+  "scriptName": "RoBot_CharacterCustomization",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal function apply(char)\n\tlocal hum = char:WaitForChild(\"Humanoid\")\n\t-- Example: hum.BodyWidthScale.Value = 1\nend\nPlayers.PlayerAdded:Connect(function(p)\n\tp.CharacterAdded:Connect(apply)\n\tif p.Character then apply(p.Character) end\nend)"
+}

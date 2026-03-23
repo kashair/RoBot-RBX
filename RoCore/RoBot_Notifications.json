@@ -1,0 +1,14 @@
+{
+  "id": "template_46",
+  "name": "template_46",
+  "keywords": [
+    "notification",
+    "notify",
+    "toast"
+  ],
+  "scriptName": "RoBot_Notifications",
+  "scriptType": "LocalScript",
+  "parent": "StarterGui",
+  "defaults": {},
+  "code": "local StarterGui = game:GetService(\"StarterGui\")\nStarterGui:SetCore(\"SendNotification\", {\n\tTitle = \"RoBot\",\n\tText = \"Hello\",\n\tDuration = 3,\n})"
+}

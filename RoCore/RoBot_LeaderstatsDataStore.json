@@ -1,0 +1,20 @@
+{
+  "id": "template_1",
+  "name": "template_1",
+  "keywords": [
+    "leaderstats",
+    "datastore",
+    "data store",
+    "save",
+    "load"
+  ],
+  "scriptName": "RoBot_LeaderstatsDataStore",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "STAT": "Coins",
+    "DATASTORE_NAME": "PlayerData_v1",
+    "START": "0"
+  },
+  "code": "local DataStoreService = game:GetService(\"DataStoreService\")\nlocal Players = game:GetService(\"Players\")\nlocal STORE = DataStoreService:GetDataStore(\"{{DATASTORE_NAME}}\")\nlocal STAT_NAME = \"{{STAT}}\"\nlocal START = {{START}}\nlocal function ensureLeaderstats(plr)\n\tlocal folder = plr:FindFirstChild(\"leaderstats\") or Instance.new(\"Folder\")\n\tfolder.Name = \"leaderstats\"\n\tfolder.Parent = plr\n\tlocal v = folder:FindFirstChild(STAT_NAME) or Instance.new(\"IntValue\")\n\tv.Name = STAT_NAME\n\tv.Parent = folder\n\treturn v\nend\nlocal function load(plr)\n\tlocal v = ensureLeaderstats(plr)\n\tlocal key = \"u_\" .. plr.UserId\n\tlocal ok, data = pcall(function() return STORE:GetAsync(key) end)\n\tlocal n = (ok and type(data) == \"table\" and tonumber(data[STAT_NAME])) or START\n\tv.Value = n\nend\nlocal function save(plr)\n\tlocal folder = plr:FindFirstChild(\"leaderstats\")\n\tif not folder then return end\n\tlocal v = folder:FindFirstChild(STAT_NAME)\n\tif not v then return end\n\tlocal key = \"u_\" .. plr.UserId\n\tpcall(function() STORE:SetAsync(key, { [STAT_NAME] = v.Value }) end)\nend\nPlayers.PlayerAdded:Connect(load)\nPlayers.PlayerRemoving:Connect(save)\ngame:BindToClose(function()\n\tfor _, p in ipairs(Players:GetPlayers()) do save(p) end\nend)"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "template_49",
+  "name": "template_49",
+  "keywords": [
+    "guild",
+    "clan",
+    "friends group"
+  ],
+  "scriptName": "RoBot_Guild",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "GUILD_NAME": "MyGuild",
+    "MAX_MEMBERS": "50"
+  },
+  "code": "local DataStoreService = game:GetService(\"DataStoreService\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tGuild System\n\t\n\tFeatures:\n\t- Guild creation and management\n\t- Ranks and permissions\n\t- Guild storage/currency\n\t- Guild announcements\n--"
+}

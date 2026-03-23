@@ -1,0 +1,16 @@
+{
+  "id": "template_5",
+  "name": "template_5",
+  "keywords": [
+    "rebirth",
+    "prestige",
+    "reset progress"
+  ],
+  "scriptName": "RoBot_Rebirth",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "STAT": "Rebirths"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal REBIRTH_STAT = \"{{STAT}}\"\nlocal function setup(plr)\n\tlocal ls = plr:WaitForChild(\"leaderstats\")\n\tlocal v = ls:FindFirstChild(REBIRTH_STAT) or Instance.new(\"IntValue\")\n\tv.Name = REBIRTH_STAT\n\tv.Parent = ls\nend\nPlayers.PlayerAdded:Connect(function(p) task.defer(setup, p) end)\n-- Hook rebirth: multiply income, reset level, etc."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "template_28",
+  "name": "template_28",
+  "keywords": [
+    "combo",
+    "chain"
+  ],
+  "scriptName": "RoBot_Combo",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "COMBO_WINDOW": "1.5",
+    "MAX_COMBO": "5"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tCombo System\n\t\n\tFeatures:\n\t- Combo counter that resets after inactivity\n\t- Damage multiplier based on combo\n\t- Combo saving between hits\n\t- Visual feedback\n--"
+}

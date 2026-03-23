@@ -1,0 +1,17 @@
+{
+  "id": "template_44",
+  "name": "template_44",
+  "keywords": [
+    "pet",
+    "companion",
+    "follower"
+  ],
+  "scriptName": "RoBot_Pet",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "FOLLOW_DISTANCE": "5",
+    "MAX_PETS": "3"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal RunService = game:GetService(\"RunService\")\nlocal TweenService = game:GetService(\"TweenService\")\n\n--[[\n\tPet/Companion System\n\t\n\tFeatures:\n\t- Pets follow owner\n\t- Equip/unequip pets\n\t- Pet stats and abilities\n\t- Visual offset positioning\n--"
+}

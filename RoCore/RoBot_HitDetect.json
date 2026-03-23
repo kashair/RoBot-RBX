@@ -1,0 +1,14 @@
+{
+  "id": "template_24",
+  "name": "template_24",
+  "keywords": [
+    "hit",
+    "hitbox",
+    "detection"
+  ],
+  "scriptName": "RoBot_HitDetect",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tHit Detection System\n\t\n\tFeatures:\n\t- Raycast-based hit detection\n\t- Part-based hitboxes\n\t- Server-side validation\n\t- Whitelist/Blacklist support\n--"
+}

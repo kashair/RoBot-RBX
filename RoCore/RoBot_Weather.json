@@ -1,0 +1,15 @@
+{
+  "id": "template_30",
+  "name": "template_30",
+  "keywords": [
+    "weather",
+    "rain",
+    "snow",
+    "fog"
+  ],
+  "scriptName": "RoBot_Weather",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local Lighting = game:GetService(\"Lighting\")\nlocal Workspace = game:GetService(\"Workspace\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal RunService = game:GetService(\"RunService\")\n\n--[[\n\tWeather System\n\t\n\tFeatures:\n\t- Rain, snow, fog effects\n\t- Random weather changes\n\t- Lighting changes with weather\n\t- Particle effects\n--"
+}

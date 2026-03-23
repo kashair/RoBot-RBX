@@ -1,0 +1,14 @@
+{
+  "id": "template_13",
+  "name": "template_13",
+  "keywords": [
+    "inventory",
+    "items",
+    "backpack"
+  ],
+  "scriptName": "RoBot_Inventory",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal inv = {}\nPlayers.PlayerAdded:Connect(function(p)\n\tinv[p.UserId] = {}\nend)\nPlayers.PlayerRemoving:Connect(function(p)\n\tinv[p.UserId] = nil\nend)\n-- Add/remove items via your own API"
+}

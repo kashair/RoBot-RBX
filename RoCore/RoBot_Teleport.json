@@ -1,0 +1,14 @@
+{
+  "id": "template_34",
+  "name": "template_34",
+  "keywords": [
+    "teleport",
+    "tp",
+    "warp"
+  ],
+  "scriptName": "RoBot_Teleport",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal function tp(plr, cf)\n\tlocal char = plr.Character\n\tif char and char.PrimaryPart then\n\t\tchar:PivotTo(cf)\n\tend\nend"
+}

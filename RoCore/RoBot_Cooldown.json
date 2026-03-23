@@ -1,0 +1,13 @@
+{
+  "id": "template_23",
+  "name": "template_23",
+  "keywords": [
+    "cooldown",
+    "cool down"
+  ],
+  "scriptName": "RoBot_Cooldown",
+  "scriptType": "ModuleScript",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local last = {}\nlocal function ready(key, seconds)\n\tlocal t = tick()\n\tif last[key] and t - last[key] < seconds then\n\t\treturn false\n\tend\n\tlast[key] = t\n\treturn true\nend\nreturn {\n\tready = ready,\n}\n"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "template_33",
+  "name": "template_33",
+  "keywords": [
+    "zone",
+    "safe zone",
+    "region",
+    "area"
+  ],
+  "scriptName": "RoBot_Zones",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal RunService = game:GetService(\"RunService\")\n\n--[[\n\tZone Detection System\n\t\n\tFeatures:\n\t- Detect when players enter/leave zones\n\t- Apply zone effects\n\t- Multiple zone types\n--"
+}

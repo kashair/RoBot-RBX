@@ -1,0 +1,14 @@
+{
+  "id": "template_9",
+  "name": "template_9",
+  "keywords": [
+    "tutorial",
+    "first join",
+    "new player"
+  ],
+  "scriptName": "RoBot_Tutorial",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal visited = {}\nPlayers.PlayerAdded:Connect(function(p)\n\tif visited[p.UserId] then return end\n\tvisited[p.UserId] = true\n\t-- Show tutorial GUI (RemoteEvent to client)\nend)"
+}

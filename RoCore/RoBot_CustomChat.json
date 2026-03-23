@@ -1,0 +1,14 @@
+{
+  "id": "template_47",
+  "name": "template_47",
+  "keywords": [
+    "custom chat",
+    "chat system",
+    "bubble chat"
+  ],
+  "scriptName": "RoBot_CustomChat",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\nlocal TextService = game:GetService(\"TextService\")\n\n--[[\n\tCustom Chat System\n\t\n\tFeatures:\n\t- Custom message filtering\n\t- Admin commands\n\t- Chat colors/roles\n\t- Private messaging\n--"
+}

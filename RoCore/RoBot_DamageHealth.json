@@ -1,0 +1,14 @@
+{
+  "id": "template_21",
+  "name": "template_21",
+  "keywords": [
+    "damage",
+    "health",
+    "hp"
+  ],
+  "scriptName": "RoBot_DamageHealth",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local function hurt(hum, n)\n\thum:TakeDamage(n)\nend"
+}

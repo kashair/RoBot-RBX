@@ -1,0 +1,14 @@
+{
+  "id": "template_17",
+  "name": "template_17",
+  "keywords": [
+    "craft",
+    "crafting",
+    "recipe"
+  ],
+  "scriptName": "RoBot_Crafting",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local recipes = {\n\t-- { out = \"Potion\", needs = { Herb = 2 } }\n}\n-- Server validates materials, grants output"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "template_3",
+  "name": "template_3",
+  "keywords": [
+    "level",
+    "leveling",
+    "progression",
+    "rank"
+  ],
+  "scriptName": "RoBot_Leveling",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "XP_PER_LEVEL": "100",
+    "MAX_LEVEL": "50"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal XP_NEED = {{XP_PER_LEVEL}}\nlocal MAX_LEVEL = {{MAX_LEVEL}}\nlocal function setup(plr)\n\tlocal ls = plr:WaitForChild(\"leaderstats\")\n\tlocal lvl = ls:FindFirstChild(\"Level\") or Instance.new(\"IntValue\")\n\tlvl.Name = \"Level\"\n\tlvl.Value = 1\n\tlvl.Parent = ls\n\tlocal xp = ls:FindFirstChild(\"XP\") or Instance.new(\"IntValue\")\n\txp.Name = \"XP\"\n\txp.Value = 0\n\txp.Parent = ls\n\txp.Changed:Connect(function()\n\t\twhile xp.Value >= XP_NEED and lvl.Value < MAX_LEVEL do\n\t\t\txp.Value -= XP_NEED\n\t\t\tlvl.Value += 1\n\t\tend\n\tend)\nend\nPlayers.PlayerAdded:Connect(function(p) task.defer(setup, p) end)"
+}

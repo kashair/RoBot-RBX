@@ -1,0 +1,15 @@
+{
+  "id": "template_39",
+  "name": "template_39",
+  "keywords": [
+    "physics",
+    "jump pad",
+    "bounce",
+    "spring"
+  ],
+  "scriptName": "RoBot_Physics",
+  "scriptType": "Script",
+  "parent": "Workspace",
+  "defaults": {},
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tPhysics Mechanics System\n\t\n\tSETUP:\n\t1. Create parts named \"JumpPad\", \"BouncePad\", etc.\n\t2. Or tag parts with attributes:\n\t   - JumpPad: JumpPower = 100\n\t   - BouncePad: BounceForce = 150\n\t   - SpeedPad: SpeedBoost = 50, Duration = 5\n--"
+}

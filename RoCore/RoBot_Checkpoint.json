@@ -1,0 +1,14 @@
+{
+  "id": "template_37",
+  "name": "template_37",
+  "keywords": [
+    "checkpoint",
+    "check point",
+    "respawn point"
+  ],
+  "scriptName": "RoBot_Checkpoint",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal Workspace = game:GetService(\"Workspace\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tCheckpoint System\n\t\n\tSETUP:\n\t1. Create checkpoint parts in Workspace\n\t2. Name them: Checkpoint_1, Checkpoint_2, etc.\n\t3. Tag them with \"Checkpoint\" attribute or put in Checkpoints folder\n--"
+}

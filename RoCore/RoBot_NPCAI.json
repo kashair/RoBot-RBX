@@ -1,0 +1,15 @@
+{
+  "id": "template_41",
+  "name": "template_41",
+  "keywords": [
+    "npc ai",
+    "pathfinding",
+    "pathfind",
+    "behavior"
+  ],
+  "scriptName": "RoBot_NPCAI",
+  "scriptType": "Script",
+  "parent": "Workspace",
+  "defaults": {},
+  "code": "local PathfindingService = game:GetService(\"PathfindingService\")\nlocal Workspace = game:GetService(\"Workspace\")\nlocal Players = game:GetService(\"Players\")\nlocal RunService = game:GetService(\"RunService\")\n\n--[[\n\tNPC AI System\n\t\n\tFeatures:\n\t- Pathfinding to targets\n\t- Patrol behavior\n\t- Chase/attack behavior\n\t- Waypoint navigation\n--"
+}

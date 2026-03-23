@@ -1,0 +1,16 @@
+{
+  "id": "template_48",
+  "name": "template_48",
+  "keywords": [
+    "party",
+    "team",
+    "group"
+  ],
+  "scriptName": "RoBot_Party",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "MAX_PARTY_SIZE": "4"
+  },
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tParty System\n\t\n\tFeatures:\n\t- Create/disband parties\n\t- Invite/accept members\n\t- Shared objectives\n\t- Party chat\n--"
+}

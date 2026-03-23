@@ -1,0 +1,15 @@
+{
+  "id": "template_6",
+  "name": "template_6",
+  "keywords": [
+    "stats",
+    "strength",
+    "speed",
+    "stat"
+  ],
+  "scriptName": "RoBot_PlayerStats",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal STATS = { \"{{S1}}\", \"{{S2}}\" }\nlocal function setup(plr)\n\tlocal ls = plr:WaitForChild(\"leaderstats\")\n\tfor _, n in ipairs(STATS) do\n\t\tlocal v = ls:FindFirstChild(n) or Instance.new(\"IntValue\")\n\t\tv.Name = n\n\t\tv.Value = v.Value\n\t\tv.Parent = ls\n\tend\nend\nPlayers.PlayerAdded:Connect(function(p) task.defer(setup, p) end)"
+}

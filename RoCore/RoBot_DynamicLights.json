@@ -1,0 +1,14 @@
+{
+  "id": "template_32",
+  "name": "template_32",
+  "keywords": [
+    "dynamic light",
+    "lights",
+    "lighting"
+  ],
+  "scriptName": "RoBot_DynamicLights",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Lighting = game:GetService(\"Lighting\")\nlocal RunService = game:GetService(\"RunService\")\nlocal TweenService = game:GetService(\"TweenService\")\n\n--[[\n\tDynamic Lighting System\n\t\n\tFeatures:\n\t- Smooth lighting transitions\n\t- Flickering lights effect\n\t- Time-based lighting\n\t- Global shadow control\n--"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "template_22",
+  "name": "template_22",
+  "keywords": [
+    "ability",
+    "abilities",
+    "skill"
+  ],
+  "scriptName": "RoBot_Abilities",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "\t\tlocal cooldowns = {}\nlocal function canUse(p, id, cd)\n\tlocal t = tick()\n\tlocal last = cooldowns[p.UserId] and cooldowns[p.UserId][id] or 0\n\tif t - last < cd then return false end\n\tcooldowns[p.UserId] = cooldowns[p.UserId] or {}\n\tcooldowns[p.UserId][id] = t\n\treturn true\nend"
+}

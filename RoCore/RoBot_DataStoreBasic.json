@@ -1,0 +1,19 @@
+{
+  "id": "template_2",
+  "name": "template_2",
+  "keywords": [
+    "datastore",
+    "data store",
+    "save data",
+    "load data",
+    "persistent data"
+  ],
+  "scriptName": "RoBot_DataStoreBasic",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "DATASTORE_NAME": "PlayerData_Generic",
+    "KEY_PREFIX": "k_"
+  },
+  "code": "local DataStoreService = game:GetService(\"DataStoreService\")\nlocal Players = game:GetService(\"Players\")\nlocal STORE = DataStoreService:GetDataStore(\"{{DATASTORE_NAME}}\")\nlocal PREFIX = \"{{KEY_PREFIX}}\"\nlocal cache = {}\nlocal function load(p)\n\tlocal key = PREFIX .. p.UserId\n\tlocal ok, data = pcall(function() return STORE:GetAsync(key) end)\n\tcache[p.UserId] = (ok and type(data) == \"table\") and data or {}\nend\nlocal function save(p)\n\tlocal key = PREFIX .. p.UserId\n\tpcall(function() STORE:SetAsync(key, cache[p.UserId] or {}) end)\nend\nPlayers.PlayerAdded:Connect(load)\nPlayers.PlayerRemoving:Connect(save)\ngame:BindToClose(function()\n\tfor _, p in ipairs(Players:GetPlayers()) do save(p) end\nend)\n-- Read/write: cache[player.UserId].YourKey = value"
+}

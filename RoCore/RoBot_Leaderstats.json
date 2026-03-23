@@ -1,0 +1,17 @@
+{
+  "id": "template_0",
+  "name": "template_0",
+  "keywords": [
+    "leaderstats",
+    "leader stats",
+    "leaderstat"
+  ],
+  "scriptName": "RoBot_Leaderstats",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "STAT": "Coins",
+    "START": "0"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal STAT_NAME = \"{{STAT}}\"\nlocal START = {{START}}\nlocal function setup(plr)\n\tlocal folder = plr:FindFirstChild(\"leaderstats\") or Instance.new(\"Folder\")\n\tfolder.Name = \"leaderstats\"\n\tfolder.Parent = plr\n\tlocal v = folder:FindFirstChild(STAT_NAME) or Instance.new(\"IntValue\")\n\tv.Name = STAT_NAME\n\tv.Value = START\n\tv.Parent = folder\nend\nPlayers.PlayerAdded:Connect(setup)\nfor _, p in ipairs(Players:GetPlayers()) do setup(p) end"
+}

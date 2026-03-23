@@ -1,0 +1,14 @@
+{
+  "id": "template_40",
+  "name": "template_40",
+  "keywords": [
+    "dialogue",
+    "dialog",
+    "npc talk"
+  ],
+  "scriptName": "RoBot_NPCDialogue",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tNPC Dialogue System\n\t\n\tFeatures:\n\t- Multi-step conversations\n\t- Choice-based dialogue\n\t- Quest integration\n\t- Server-controlled state\n--"
+}

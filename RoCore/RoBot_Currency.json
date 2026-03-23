@@ -1,0 +1,15 @@
+{
+  "id": "template_11",
+  "name": "template_11",
+  "keywords": [
+    "currency",
+    "coins",
+    "gems",
+    "money"
+  ],
+  "scriptName": "RoBot_Currency",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local Players = game:GetService(\"Players\")\nlocal NAMES = { \"{{C1}}\", \"{{C2}}\" }\nlocal function setup(plr)\n\tlocal ls = plr:WaitForChild(\"leaderstats\")\n\tfor _, n in ipairs(NAMES) do\n\t\tlocal v = ls:FindFirstChild(n) or Instance.new(\"IntValue\")\n\t\tv.Name = n\n\t\tv.Value = v.Value\n\t\tv.Parent = ls\n\tend\nend\nPlayers.PlayerAdded:Connect(function(p) task.defer(setup, p) end)"
+}

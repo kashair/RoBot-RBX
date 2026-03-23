@@ -1,0 +1,17 @@
+{
+  "id": "template_25",
+  "name": "template_25",
+  "keywords": [
+    "boss",
+    "boss fight",
+    "raid"
+  ],
+  "scriptName": "RoBot_Boss",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "BOSS_NAME": "Boss",
+    "MAX_HEALTH": "1000"
+  },
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tBoss Fight System\n\t\n\tFeatures:\n\t- Boss health and phase management\n\t- Attacks and abilities\n\t- Reward distribution\n\t- State tracking\n--"
+}

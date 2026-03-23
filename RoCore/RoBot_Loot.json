@@ -1,0 +1,16 @@
+{
+  "id": "template_15",
+  "name": "template_15",
+  "keywords": [
+    "loot",
+    "drop",
+    "reward drop"
+  ],
+  "scriptName": "RoBot_Loot",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "DROP_CHANCE": "0.1"
+  },
+  "code": "local CHANCE = {{DROP_CHANCE}}\nlocal function roll()\n\treturn math.random() < CHANCE\nend\n-- On enemy death: if roll() then spawn pickup"
+}

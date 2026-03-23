@@ -1,0 +1,17 @@
+{
+  "id": "template_36",
+  "name": "template_36",
+  "keywords": [
+    "procedural",
+    "generation",
+    "noise"
+  ],
+  "scriptName": "RoBot_ProcGen",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "SEED": "0",
+    "CHUNK_SIZE": "16"
+  },
+  "code": "local Workspace = game:GetService(\"Workspace\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tProcedural Generation System\n\t\n\tFeatures:\n\t- Simple noise-based terrain generation\n\t- Chunk-based loading\n\t- Configurable parameters\n--"
+}

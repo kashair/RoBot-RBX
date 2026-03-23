@@ -1,0 +1,16 @@
+{
+  "id": "template_4",
+  "name": "template_4",
+  "keywords": [
+    "xp",
+    "experience",
+    "exp"
+  ],
+  "scriptName": "RoBot_XP",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {
+    "XP_NAME": "XP"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal NAME = \"{{XP_NAME}}\"\nlocal function setup(plr)\n\tlocal ls = plr:WaitForChild(\"leaderstats\")\n\tlocal v = ls:FindFirstChild(NAME) or Instance.new(\"IntValue\")\n\tv.Name = NAME\n\tv.Value = v.Value\n\tv.Parent = ls\nend\nPlayers.PlayerAdded:Connect(function(p) task.defer(setup, p) end)\n-- Example grant: fire a RemoteEvent from client with validation in production"
+}

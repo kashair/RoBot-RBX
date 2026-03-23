@@ -1,0 +1,15 @@
+{
+  "id": "template_45",
+  "name": "template_45",
+  "keywords": [
+    "gui",
+    "hud",
+    "menu",
+    "screen gui"
+  ],
+  "scriptName": "RoBot_GUI",
+  "scriptType": "LocalScript",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local plr = game:GetService(\"Players\").LocalPlayer\nlocal gui = Instance.new(\"ScreenGui\")\ngui.Name = \"RoBot_HUD\"\ngui.ResetOnSpawn = false\ngui.Parent = plr:WaitForChild(\"PlayerGui\")\nlocal f = Instance.new(\"Frame\")\nf.Size = UDim2.fromOffset(200, 40)\nf.Position = UDim2.new(0, 12, 0, 12)\nf.BackgroundColor3 = Color3.fromRGB(20, 22, 28)\nf.Parent = gui"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "template_26",
+  "name": "template_26",
+  "keywords": [
+    "pvp",
+    "pve",
+    "friendly fire"
+  ],
+  "scriptName": "RoBot_PvPvE",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {
+    "DEFAULT_MODE": "PvE"
+  },
+  "code": "local Players = game:GetService(\"Players\")\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n\n--[[\n\tPvP / PvE Mode System\n\t\n\tFeatures:\n\t- Toggle between PvP and PvE modes\n\t- Safe zones where PvP is disabled\n\t- Team damage controls\n\t- Player PvP preferences\n--"
+}

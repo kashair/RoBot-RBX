@@ -1,0 +1,14 @@
+{
+  "id": "gacha_crates",
+  "name": "Gacha / crate opening",
+  "keywords": [
+    "upgrade",
+    "enhance",
+    "refine"
+  ],
+  "scriptName": "RoBot_Upgrade",
+  "scriptType": "Script",
+  "parent": "ServerScriptService",
+  "defaults": {},
+  "code": "local rng = Random.new()\nlocal pool = { \"Common\", \"Rare\", \"Epic\" }\nlocal function roll()\n\treturn pool[rng:NextInteger(1, #pool)]\nend"
+}

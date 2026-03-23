@@ -1,0 +1,14 @@
+{
+  "id": "template_29",
+  "name": "template_29",
+  "keywords": [
+    "weapon",
+    "sword",
+    "gun"
+  ],
+  "scriptName": "RoBot_Weapon",
+  "scriptType": "Script",
+  "parent": "ReplicatedStorage",
+  "defaults": {},
+  "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal ServerStorage = game:GetService(\"ServerStorage\")\nlocal Players = game:GetService(\"Players\")\n\n--[[\n\tWeapon System\n\t\n\tSETUP:\n\t1. Create weapons in ServerStorage.Weapons\n\t2. Each weapon needs stats below\n\t3. Use tool in StarterPack for default weapon\n--"
+}
